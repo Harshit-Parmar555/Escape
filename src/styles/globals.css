@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Optional custom variant */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+}
+
+@layer base {
+  :root {
+    --background: 260 40% 4%;
+    --foreground: 260 20% 96%;
+
+    --card: 260 30% 6%;
+    --card-foreground: 260 20% 96%;
+
+    --popover: 260 30% 6%;
+    --popover-foreground: 260 20% 96%;
+
+    --muted: 260 20% 15%;
+    --muted-foreground: 260 10% 55%;
+
+    --border: 260 20% 15%;
+    --input: 260 20% 15%;
+
+    --primary: 275 100% 68%; /* Neon purple */
+    --primary-foreground: 260 10% 98%;
+
+    --secondary: 260 60% 20%;
+    --secondary-foreground: 260 20% 96%;
+
+    --accent: 210 100% 60%; /* Cyan-blue */
+    --accent-foreground: 260 20% 96%;
+
+    --destructive: 340 82% 52%; /* Pinkish red */
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 275 100% 68%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Same values retained for enforced dark mode */
+  }
+}
+
+::selection {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: hsl(var(--background));
+  border-radius: 8px;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--background));
+}
+
+.dotPattern {
+  background-image: radial-gradient(rgba(75, 0, 130, 0.3) 1px, transparent 1px);
+  background-size: 25px 25px;
+}
+
+.use-automation-zoom-in {
+  animation: automation-zoom-in 0.5s;
+}
+
+.card-mask {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(168, 85, 247, 0.15),
+    transparent
+  );
+}
+
+.gradient {
+  background: conic-gradient(
+    from 230.29deg at 51.63% 52.16%,
+    #7c3aed 0deg,
+    #6366f1 90deg,
+    #a855f7 180deg,
+    #0ea5e9 270deg,
+    #7c3aed 360deg
+  );
+}
+
+.lamp {
+  opacity: 1;
+  transform: translateY(-200px) rotate(180deg) scale(2) translateZ(0px);
+}
+
+@keyframes automation-zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Font utilities */
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+
+/* Custom font classes for different use cases */
+.text-heading {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+}
+
+.text-body {
+  font-family: var(--font-inter);
+  font-weight: 400;
+}
