@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { reviews } from "@/constants/index";
 import { cn } from "@/lib/utils";
-import { UserIcon } from "lucide-react";
 import Image from "next/image";
 import { BsTwitterX } from "react-icons/bs";
 

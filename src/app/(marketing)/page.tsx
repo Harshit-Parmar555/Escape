@@ -15,7 +15,6 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -23,7 +22,7 @@ import {
 
 import { cn } from "@/lib/utils";
 
-import { features, perks, pricingCards, reviews } from "@/constants";
+import { features, perks, pricingCards} from "@/constants";
 
 import { ChevronRight } from "lucide-react";
 import { CiCircleCheck } from "react-icons/ci";
