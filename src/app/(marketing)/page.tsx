@@ -48,7 +48,7 @@ export default function HomePage() {
               <div className="bg-zinc-900 rounded-full flex items-center px-2 py-1">
                 ✨
                 <h1 className="text-sm">
-                  Welcome to <span>Neurix</span>
+                  Welcome to <span>Escape</span>
                 </h1>
                 <ChevronRight />
               </div>

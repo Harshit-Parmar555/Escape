@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 
 export const SITE_CONFIG: Metadata = {
   title: {
-    default: 'Neurix - An AI Powered Code Editor',
-    template: `%s | Neurix`,
+    default: 'Escape - An AI Powered Code Editor',
+    template: `%s | Escape`,
   },
   description:
-    'Neurix is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
+    'Escacpe is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
   icons: {
     icon: [
       {
@@ -16,9 +16,9 @@ export const SITE_CONFIG: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Neurix - An AI Powered Code Editor',
+    title: 'Escape - An AI Powered Code Editor',
     description:
-      'Neurix is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
+      'Escape is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
     // images: [
     //   {
     //     url: '',
@@ -28,9 +28,9 @@ export const SITE_CONFIG: Metadata = {
   twitter: {
     card: 'summary_large_image',
     creator: '@harshitxcodes',
-    title: 'Neurix - An AI Powered Code Editor',
+    title: 'Escape - An AI Powered Code Editor',
     description:
-      'Neurix is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
+      'Esacpe is an AI-powered code editor designed to accelerate your development process. Get intelligent suggestions, real-time refactoring, and seamless debugging support — all in one place.',
     // images: [
     //   {
     //     url: '',

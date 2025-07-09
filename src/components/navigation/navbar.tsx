@@ -14,7 +14,7 @@ export async function Navbar() {
               height={40}
               width={40}
             />
-            <span className="text-lg font-medium">Neurix</span>
+            <span className="text-xl font-medium">Escape</span>
           </Link>
         </div>
 

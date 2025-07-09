@@ -13,7 +13,7 @@ export function Footer() {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-5">
         {/* Logo and Summary */}
         <div>
-          <h2 className="text-2xl font-semibold text-white">Neurix</h2>
+          <h2 className="text-2xl font-semibold text-white">Escape</h2>
 
           <div className="mt-4 flex gap-4 text-muted-foreground">
             <Link href="#" aria-label="Facebook">
@@ -146,7 +146,7 @@ export function Footer() {
       {/* Bottom Line */}
       <div className="mt-12 border-t border-border/40 pt-6 text-center md:flex md:items-center md:justify-between">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Neurix. All rights reserved.
+          &copy; {new Date().getFullYear()} Escape. All rights reserved.
         </p>
         <div className="mt-4 flex justify-center gap-1 text-sm text-muted-foreground md:mt-0">
           Made in India with{" "}
